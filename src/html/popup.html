@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../vendor/bootstrap.min.css">
+</head>
+<style>
+    #body{
+        width: 500px;
+    }
+</style>
+<body class="container" id="body">
+    <div class=" bg-dark m-1 p-3 text-light text-center">
+        <h1 class="h1 ">TPGenerator  </h1>
+        <h5>simple and powerfull password generator  </h5>
+    </div>
+	
+    <div>
+        <div  class="row" class='d-flex '>
+            <div class="row  text-center px-5 mt-3">
+                <input type="range" name="" max="20" min="1" id="range" class=" px-5">
+                <p class='' id=''><span id="range-value" class="h6 mx-1 text-center"> 10 </span>caracteres maximum</p>
+            </div>
+            
+            <div class="row">
+            <div class="col-6 p-1 mx-3 border text-center h6"><label for="speciaux">caracteres speciaux</label><input type="checkbox" name="caracteres speciaux" id="speciaux" class="m-1 mx-3"></div>
+            <div class="col-5 p-1 border text-center h6"><label for="majiscules">lettres majiscules</label><input type="checkbox" name="lettres majiscules" id="majiscules" class="m-1 mx-3 "></div>
+            <div class="col-5 p-1 mx-3 border text-center h6"><label for="miniscules">lettres miniscules</label><input type="checkbox" name="lettres miniscules" checked disabled id="miniscules" class="m-1 mx-3"></div>
+            <div class="col-5 p-1 border text-center h6"><label for="chiffres">chiffres</label><input type="checkbox" name="chiffres" id="chiffres" class="m-1 mx-3"></div>
+            </div>
+            <div class="row p-3 px-5">
+                <p id="password" class="from-control p-2 text-center border h6 "> password </p>
+                <button class="btn btn-primary mx-2 col-4 my-2 rounded-0" id="run"> generer </button>
+                <button class="btn btn-danger mx-2 col-4 my-2 rounded-0" id="clear"> effacer </button>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+<script src="../js/popup.js"></script>
+</html>
